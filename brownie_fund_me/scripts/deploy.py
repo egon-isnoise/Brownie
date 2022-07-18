@@ -6,9 +6,9 @@ def deploy_fund_me():
     account = get_account()
     
     if network.show_active() != "development":
-        eth_price_feed_address = config["networks"][network.show_active()]["eth_usd_price_feed"];
-        matic_price_feed_address = config["networks"][network.show_active()]["matic_usd_price_feed"];
-        xtz_price_feed_address = config["networks"][network.show_active()]["xtz_usd_price_feed"];
+        eth_price_feed_address = config["networks"][network.show_active()]["eth_usd_price_feed"]
+        matic_price_feed_address = config["networks"][network.show_active()]["matic_usd_price_feed"]
+        xtz_price_feed_address = config["networks"][network.show_active()]["xtz_usd_price_feed"]
         
     else:
         deploy_mocks()
